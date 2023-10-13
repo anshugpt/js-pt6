@@ -144,3 +144,29 @@ function concArray(arrName){
 // console.log(`The concatnation is : ${concArray(student)}`);
 
 
+//* Scope
+// Scope determine the accessibility of Variable, Objects and Functions from  different part of the code (kisko kaha use kiya jata hai)
+
+//* Function Scope
+// Variable defined inside a function are not accessible (visible) out side the function (more specific than globle scope)
+// Function k andar ham globle scope variable ko use kar sakte hai
+
+//* Block Scope
+// Variable declared inside a {} block cannot be accessed from outside the block
+// if use (var) then we can access but use of (var) is not good thing
+
+// for (let i=1; i<=5; i++){
+//     console.log(i);   //* i is only accessed inside the block not outside
+// }
+// console.log(i); //* --> output -> error > i is not defined
+
+//* Lexical Scope
+// a variable defined in outer function can be accessible in inner function defined after the variable declaration
+// not possible in opposite form
+// variable in inner and try to access in outer is not possible
+// we can't even use inner function directly because its is function scope
+
+
+
+
+
