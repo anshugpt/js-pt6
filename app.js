@@ -167,6 +167,100 @@ function concArray(arrName){
 // we can't even use inner function directly because its is function scope
 
 
+//* Function Expression 
+// we can store our function in variable
+// it is a name less function
+//* We can do everyting we do with variables (Change, update....)
+
+// syntax :-
+
+// const variable = function (){
+     // Do something
+// }
+const addition = function(a, b){
+    return a + b;
+}
+
+//* Higher Order function
+// A function that does one or both:
+// -> takes one or multiple function as arguments
+// -> returns a function
+
+//* Take function as arguments
+
+// Example :-
+
+function multiFunc(func, n){ //* higher order function
+    for(let i=1; i<=n; i++){
+        func();                  //* call func() n number of times
+    }
+}
+
+const greet = function(){  //* normal function
+    console.log("Hello");
+}
+
+// multiFunc(greet, 5); //* function as an arguments
+
+//* return a function
+
+// Let's make a factory function which return a coustom function 
+
+function oddEvenTest(request){
+    if (request == "odd"){
+        return function(n){
+            console.log(!(n%2 == 0));
+        }
+    } else if (request == "even"){
+        return function(n){
+            console.log(n%2 == 0);
+        }
+    } else {
+        console.error("Wrong Request!");
+    }
+}
+// let func = oddEvenTest("even"); //* store that value in a variable
+// func(12); //* call to check
 
 
+//* Methods
+// jo function object k andar defined hote hai unko ham methods kehte hai
 
+const calculator = {
+    add: function(a, b){
+        return a + b;
+    },
+    sub: function(a, b){
+        return a - b;
+    },
+    multi: function(a, b){
+        return a * b;
+    },
+    div: function(a, b){
+        return a / b;
+    },
+    modulo: function(a, b){
+        return a % b;
+    }
+};
+
+// console.log(calculator.add(6, 3));
+
+//* Methods Shorthand :-
+
+const calcu = {
+    add(a, b){
+        return a + b;
+    },
+    sub(a, b){
+        return a - b;
+    },
+    div(a, b){
+        return a / b;
+    },
+    multi(a, b){
+        return a * b;
+    }
+};
+
+// console.log(calcu.multi(5, 5));
