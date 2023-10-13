@@ -47,3 +47,39 @@
 // }
 
 // poem();
+
+// function to display the value of dice
+
+// function rollDice(){
+//     let dice = Math.floor(Math.random() * 6) + 1
+//     console.log(`Dice number is : ${dice}`);
+// }
+
+// rollDice();
+
+//* Function with arguments
+// Value we pass to the function
+// syntax :-
+// function funcName(arg1, arg2, .....){
+    // Do something
+// }
+
+
+// function sayHello(name){ //* Parameter -> name 
+//     console.log(`Hello ${name}`);
+// }
+// sayHello("Anshu"); //* "Anshu" -> Argument -> now stored in name parameter.
+
+//* Order is very important in function arguments
+// we have to pass arguments orderwise!
+
+// function userInfo(name, age, city){
+//     console.log(`Hi ${name}, You are ${age} years old and you live in ${city}`);
+// }
+// userInfo("Anjali", 18, "Patna");
+
+// function sum(a, b){
+//     console.log(`Sum is ${a + b}`);
+// }
+// sum(144, 100);
+
