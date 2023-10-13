@@ -41,8 +41,8 @@
 
 // function poem(){
 //     console.log("Twinkle Twinkle little star,");
-//     console.log("How you wonder waht you are");
-//     console.log("What's above that looks so brite,");
+//     console.log("How you wonder waht you are,");
+//     console.log("What's above the world so high,");
 //     console.log("It's a Diamond in the sky!");
 // }
 
