@@ -120,4 +120,27 @@ function sumOf(a, b){
 //     console.log("Hello"); //* -> this code will never print :(
 // }
 
+//* Practice Question 
+
+//* Function that return the sum of numbers from 1 to n
+
+function addFrom1To(n){
+    let sum = 0
+    for(let i=1; i<=n; i++){
+        sum += i
+    } return sum;
+}
+// console.log(`The Total Sum is ${addFrom1To(20)}`);
+
+//* Function that return the concatenations of all strings in an array
+
+function concArray(arrName){
+    let conc = ""
+    for(let i=0; i<arrName.length; i++){
+        conc += arrName[i]
+    } return conc;
+}
+// let student = ["Anshu", "Anjali", "Anushka"]
+// console.log(`The concatnation is : ${concArray(student)}`);
+
 
