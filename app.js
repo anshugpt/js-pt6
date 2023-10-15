@@ -264,3 +264,27 @@ const calcu = {
 };
 
 // console.log(calcu.multi(5, 5));
+
+//* Practice Question
+
+//* Qs-1
+// function that return array elements larger than a number
+
+const qs1 = function(inNum){
+    const arrNumber = [2, 6, 9, 13, 23, 45, 17]
+    let result = []
+    for(let i=0; i<arrNumber.length; i++){
+        if(inNum < arrNumber[i]){
+            result.push(arrNumber[i])
+        } else {
+
+        }
+    }
+   return result;
+}
+
+// console.log(qs1(10));
+
+//* Qs-2
+
+
