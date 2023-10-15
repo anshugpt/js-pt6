@@ -277,7 +277,6 @@ const qs1 = function(inNum){
         if(inNum < arrNumber[i]){
             result.push(arrNumber[i])
         } else {
-
         }
     }
    return result;
@@ -286,5 +285,37 @@ const qs1 = function(inNum){
 // console.log(qs1(10));
 
 //* Qs-2
+//TODO look to the solution
 
+//* Qs-3
 
+function country(conArr){
+    let result = ""
+    for(let i=0; i<conArr.length; i++){
+        for(let j=conArr.length - 1; j>=0; j--){
+            if(conArr[i].length > conArr[j].length){
+                result = conArr[i]
+            } else {}
+        }
+    } return result;   
+}
+
+// let qs3 = ["india", "america", "china", "republic of india"]
+// console.log(country(qs3));
+
+//* Qs-4 
+
+function countVovle(str){
+    let count = 0
+    for(let i=0; i<str.length; i++){
+        if(str[i] == "a" || str[i] == "i" || str[i] == "o" || str[i] == "u" || str[i] == "e"){
+            count++;
+        }
+    } return count;
+}
+
+// let vov = "anshu gupta"
+// console.log(countVovle(vov));
+
+//* Qs-5
+//TODO do it your self if can't then look at solution
